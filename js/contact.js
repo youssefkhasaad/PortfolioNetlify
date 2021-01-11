@@ -13,11 +13,7 @@ document.getElementById('form')
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
       btn.value = 'Send Email';
-      Swal.fire(
-        'Good job!',
-        'You clicked the button!',
-        'success'
-      );
+      
     },document.getElementById("form").reset()
 ,
      (err) => {
